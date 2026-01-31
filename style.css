@@ -15,6 +15,7 @@ body {
 }
 
 #main {
+  padding: 0 0.25rem;
   border-radius: 15px;
   background-color: #ff3334;
   height: 70vh;
@@ -61,4 +62,13 @@ button:hover {
 
 button:nth-of-type(2) {
   order: 0;
+}
+
+#no-msg {
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+
+#no-msg.active {
+  transform: scale(1);
 }
